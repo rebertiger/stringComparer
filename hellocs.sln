@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hellocs", "hellocs.csproj", "{71507F7A-9DEF-40FA-A664-940467D59A1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71507F7A-9DEF-40FA-A664-940467D59A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71507F7A-9DEF-40FA-A664-940467D59A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71507F7A-9DEF-40FA-A664-940467D59A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71507F7A-9DEF-40FA-A664-940467D59A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59B69F55-1044-4ABF-82C4-7C0BFAC608F6}
+	EndGlobalSection
+EndGlobal

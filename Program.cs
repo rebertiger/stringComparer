@@ -16,7 +16,7 @@ while (true)
             Console.WriteLine("Wrong input, try again.");
         }
     }
-    
+
     while (true)
     {
         Console.WriteLine("Enter second string to compare: ");
@@ -30,16 +30,31 @@ while (true)
             Console.WriteLine("Wrong input, try again.");
         }
     }
-    
-    bool result = string1.ToLower().Equals(string2.ToLower());
-    Console.Write($"'{string1}' and '{string2}' is ");
-    if (result)
+
+    string[] string1words = string1.Split(' ');
+    string[] string2words = string2.Split(" ");
+    //check if words match by comparing one by one
+    for (int i = 0; i < Math.Min(string1words.Length, string2words.Length); i++)
     {
-        Console.WriteLine("same.");
+        if (!string.Equals(string1words[i], string2words[i], StringComparison.Ordinal))
+        {
+            Console.WriteLine($"Difference: \"{string1words[i]}\" (In first string: {i + 1}. word,\n \"{string2words[i]}\"  In second string: {i + 1}. word)");
+        }
     }
-    else
+    //check if one of the input strings have extra word than other
+    if (string1words.Length > string2words.Length)
     {
-        Console.WriteLine("not same.");
+        for (int i = string2words.Length; i < string1words.Length; i++)
+        {
+            Console.WriteLine($"Extra word in the first string is: \"{string1words[i]}\"");
+
+        }
+    }
+    else if (string1words.Length < string2words.Length)
+    {
+        for (int i = string1words.Length; i < string2words.Length; i++)
+        {
+            Console.WriteLine($"Extra word in second string is: \"{string2words[i]}\"");
+        }
     }
 }
-

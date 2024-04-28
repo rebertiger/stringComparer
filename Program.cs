@@ -7,7 +7,7 @@ while (true)
     {
         Console.WriteLine("Enter first string to compare: ");
         string1 = Console.ReadLine();
-        if (string1 != "" && string1.Length > 1)
+        if (!string.IsNullOrEmpty(string1))
         {
             break;
         }
@@ -21,7 +21,7 @@ while (true)
     {
         Console.WriteLine("Enter second string to compare: ");
         string2 = Console.ReadLine();
-        if (string2 != "" && string2.Length > 1)
+        if (!string.IsNullOrEmpty(string2))
         {
             break;
         }
